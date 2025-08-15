@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        background-color: #62306d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        height: 150px;
+        width: 150px;
+        background-color: #f7ec7d;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 0 35px #62306d;
+        position: relative;
+      }
+      .div1 {
+        height: 80px;
+        width: 80px;
+        background-color: #f7ec7d;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-130%);
+        z-index: -1;
+      }
+      .div2 {
+        height: 80px;
+        width: 80px;
+        background-color: #f7ec7d;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateX(130%);
+        z-index: -2;
+      }
+      .div3 {
+        height: 80px;
+        width: 80px;
+        background-color: #f7ec7d;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(130%);
+        z-index: -3;
+      }
+      .div4 {
+        height: 80px;
+        width: 80px;
+        background-color: #f7ec7d;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateX(-130%);
+        z-index: -4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+    </div>
+  </body>
+</html>
