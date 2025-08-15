@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        background-color: #293462;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div {
+        height: 250px;
+        width: 250px;
+        background-color: #fe5f55;
+        border-radius: 50% 50% 30% 30%;
+        position: relative;
+        overflow: hidden;
+      }
+      .div::before {
+        content: "";
+        height: 150px;
+        width: 150px;
+        background-color: #fff1c1;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-15%, -35%);
+      }
+      .div::after {
+        content: "";
+        height: 150px;
+        width: 150px;
+        background-color: #fff1c1;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(80%, -35%);
+      }
+      .circle1 {
+        height: 75px;
+        width: 75px;
+        background-color: #fff1c1;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(20%, 170%);
+      }
+      .circle2 {
+        height: 75px;
+        width: 75px;
+        background-color: #fff1c1;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(215%, 170%);
+      }
+      .rec {
+        height: 12px;
+        width: 55px;
+        background-color: #fff1c1;
+        border-radius: 40px;
+        position: absolute;
+        transform: translate(97px, 215px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="rec"></div>
+      </div>
+    </div>
+  </body>
+</html>
