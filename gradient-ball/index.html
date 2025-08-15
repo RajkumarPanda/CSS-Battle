@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: #4f77ff;
+      }
+      .circle {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        background-color: white;
+        background-image: linear-gradient(
+          to top left,
+          white 35%,
+          #4f77ff 35% 41%,
+          white 41% 47%,
+          #4f77ff 47% 53%,
+          white 53% 59%,
+          #4f77ff 59% 65%,
+          white 65%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+  </body>
+</html>
