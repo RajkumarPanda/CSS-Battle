@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        background-color: #e3516e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div {
+        height: 300px;
+        width: 300px;
+        background-color: #fade8b;
+        border-radius: 50%;
+        position: relative;
+      }
+      .div:before {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 100%;
+        background-color: #e3516e;
+        z-index: 1;
+      }
+      .div:after {
+        content: "";
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        background-color: #fade8b;
+        border-radius: 50%;
+        transform: translate(50%, -80%);
+      }
+      .circle {
+        height: 120px;
+        width: 120px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 15px solid #e3516e;
+        position: absolute;
+        /*      transform: translate(100%, 140%); */
+        transform: translate(75%, 110%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>
