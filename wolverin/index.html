@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100dvh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #373794;
+      }
+
+      .capsule {
+        height: 175px;
+        width: 100px;
+        border-radius: 150px;
+        background-image: linear-gradient(
+          to bottom,
+          #f3ac3c 0% 70%,
+          #0e0e39 70%
+        );
+        position: absolute;
+      }
+      .rectangle1 {
+        height: 70px;
+        width: 75px;
+        border-radius: 0 0 50px 50px;
+        background: #f3ac3c;
+        position: absolute;
+        transform: translate(0px, 69px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mouth {
+        height: 25px;
+        width: 50px;
+        border-radius: 50px;
+        background: white;
+      }
+      .box1 {
+        height: 125px;
+        width: 140px;
+        background: #0e0e39;
+        position: absolute;
+        z-index: 100;
+        border-radius: 0 100px 0 100px;
+        transform: translate(-50%, -15%);
+      }
+      .box2 {
+        height: 125px;
+        width: 140px;
+        background: #0e0e39;
+        position: absolute;
+        z-index: 101;
+        border-radius: 100px 0 100px 0;
+        transform: translate(50%, -15%);
+      }
+
+      .box1::after {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 40px;
+        border-radius: 0 100px 0 100px;
+        background: white;
+        right: 10px;
+        bottom: 20px;
+      }
+      .box2::after {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 40px;
+        border-radius: 100px 0 100px 0;
+        background: white;
+        left: 10px;
+        bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="capsule"></div>
+    <div class="rectangle1">
+      <div class="mouth"></div>
+    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
