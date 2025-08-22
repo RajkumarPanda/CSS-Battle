@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        background-color: #f5d6b4;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        height: 80px;
+        width: 80px;
+        background: #d86f45;
+        border-radius: 50%;
+      }
+      .rec1 {
+        height: 40px;
+        width: 140px;
+        background: #d86f45;
+        border-radius: 10px 10px 30px 30px;
+      }
+      .rec2 {
+        height: 100px;
+        width: 200px;
+        background: #d86f45;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .rec2::before {
+        position: absolute;
+        content: "";
+        height: 140%;
+        width: 40%;
+        background: #f5d6b4;
+        border-radius: 0 50% 50% 0;
+        transform: rotate(15deg) translate(-19px, -20%);
+      }
+      .rec2::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        height: 140%;
+        width: 40%;
+        background: #f5d6b4;
+        border-radius: 50% 0 0 50%;
+        transform: rotate(-15deg) translate(19px, -20%);
+      }
+      .rec3 {
+        height: 50px;
+        width: 250px;
+        background: #d86f45;
+        border-radius: 30px 30px 15px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="rec1"></div>
+    <div class="rec2"></div>
+    <div class="rec3"></div>
+  </body>
+</html>
